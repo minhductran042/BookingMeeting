@@ -73,7 +73,7 @@
 }
 
 .detail-2{
-    background-color: rgb(230, 230, 230, 0.5);
+    background-color: rgb(230, 230, 230);
     border-bottom-right-radius: 8px;
     padding: 20px 40px;
     min-width: 300px;
@@ -106,8 +106,8 @@
 }
 .item-subtext{
     font-size: 14px;
-    color: rgba(11, 53, 88, 0.673);
-    font-weight: 600;
+    color: rgb(71, 103, 136);
+    font-weight: 500;
 }
 .features-grid{
     display: grid;

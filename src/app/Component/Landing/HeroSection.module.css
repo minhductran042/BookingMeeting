@@ -1,0 +1,148 @@
+.hero-section{
+    width: 100%;
+    padding: 80px 0;
+    background-color: #fff;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+    align-items: center;
+}
+.left{
+    grid-column: span 4 ;
+}
+.right{
+    grid-column: span 8;
+}
+.title{
+    font-size: 4.25rem;
+    color: rgb(11, 53, 88);
+    font-weight: 700;
+    line-height: 1.2;
+    padding-bottom: 24px;
+}
+.sub-title{
+    font-size: 1.25rem;
+    color: rgb(71, 103, 136);
+    font-weight: 400;
+    line-height: 1.4;
+    padding-bottom: 24px;
+}
+.user-action{
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+.dividers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    color: #607b98;
+}
+.dividers::before, .dividers::after{
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #e5e5e5 ;
+}
+.dividers::before{
+    margin-right: 5px;
+}
+.dividers::after{
+    margin-left: 5px;
+}
+.sign-up{
+    font-size: 0.875rem;
+    line-height: 1.4;
+    font-weight: 500;
+}
+.link{
+    color: blue;
+}
+.link:hover{
+    color: red;
+}
+.link:active{
+    color: purple
+}
+.card{
+    position: absolute;
+    top: 150px;
+    right: 150px;
+    border: 1px solid rgb(11, 53, 88);
+    box-shadow: 0px 0px 5px rgb(11, 53, 88);
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+    transition: all 1s ease;
+    width: 600px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: rgba(230, 240, 255, 1);
+}
+.show{
+    opacity: 1;
+    transform: translate3d(-40, 40, 40);
+}
+.hide{
+    opacity: 0.1;
+    transform: translate3d(0, 0, 0);
+}
+.card-title{
+    color: rgb(11, 53, 88);
+    background-color: white;
+    padding: 24px;
+    border-top-right-radius: 20px ;
+    border-top-left-radius: 20px;
+}
+.work-flow{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.flow{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 275px;
+    gap: 30px;
+}
+.pin{
+    position: absolute;
+    top:20px;
+    left: 20px;
+    background-color: rgba(230, 240, 255, 1);
+    padding: 5px;
+    border-radius: 10px;
+    color: blue;
+}
+.work-flow-header{
+    color: #395b77;
+    font-weight: bold;
+}
+.flow-detail{
+    border: 2px solid blue;
+    padding: 10px;
+    border-radius: 20px;
+    color: rgb(11, 53, 88);
+    font-weight: 500;
+}
+.flow-action{
+    background-color: rgba(230, 240, 255, 1);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #395b77;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap: 10px;
+}

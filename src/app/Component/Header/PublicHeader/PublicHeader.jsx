@@ -3,11 +3,11 @@ import React, { act, useState } from 'react'
 import styles from './Header.module.css'
 import Logo from './Logo'
 import NavMenu from './NavMenu/NavMenu'
-import LoginBtn from './UserActions/LoginBtn'
-import GetStartBtn from './UserActions/GetStartBtn'
 import ProductionMenuDetail from './NavMenu/ProductionMenu/ProductionMenuDetail'
 import ResourcesMenuDetail from './NavMenu/ResourcesMenu/ResourcesMenuDetail'
 import SolutionsMenuDetail from './NavMenu/SolutionsMenu/SolutionsMenuDetail'
+import LoginBtn from '../../UserActions/LoginBtn'
+import GetStartBtn from '../../UserActions/GetStartBtn'
 const PublicHeader = () => {
 
   const [active, setActive] = useState(null)
