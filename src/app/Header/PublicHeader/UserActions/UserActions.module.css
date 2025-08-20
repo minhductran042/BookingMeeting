@@ -1,0 +1,26 @@
+.get-started{
+    padding: 8px 10px;
+    font-size: 16px;
+    background-color: rgb(0, 107, 255);
+    border: 1px solid rgb(0, 107, 255);
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.get-started:hover{
+    background-color: rgb(0, 78, 186);
+    border-color: rgb(0, 78, 186);
+}
+.login-btn{
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 3px;
+    border-radius: 8px;
+}
+.login-btn:hover{
+    background-color: rgba(25, 71, 112, 0.11);
+}
