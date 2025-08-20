@@ -3,9 +3,7 @@ import React, { useEffect, useState } from 'react'
 import styles from './HeroSection.module.css'
 import GoogleLoginBtn from '../UserActions/GoogleLoginBtn'
 import FacebookLoginBtn from '../UserActions/FacebookLoginBtn'
-import Image from 'next/image'
 import Link from 'next/link'
-import { Mail, Phone } from 'lucide-react'
 import Card1 from './Card1'
 import Card2 from './Card2'
 const HeroSection = () => {
@@ -16,7 +14,7 @@ const HeroSection = () => {
         const internal = setInterval(() =>{
             setActive((prev) => (prev === 0 ? 1: 0))
         }, 3000)
-        return () => clearImmediate(internal)
+        return () => clearInterval(internal)
     },[])
 
   return (

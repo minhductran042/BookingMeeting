@@ -1,15 +1,15 @@
 .hero-section{
     width: 100%;
-    padding: 80px 0;
+    padding: 60px 0;
     background-color: #fff;
 }
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 20px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 24px;
+    gap: 20px;
     align-items: center;
 }
 .left{
@@ -22,8 +22,8 @@
     font-size: 4.25rem;
     color: rgb(11, 53, 88);
     font-weight: 700;
-    line-height: 1.2;
-    padding-bottom: 24px;
+    line-height: 1.1;
+    padding-bottom: 20px;
 }
 .sub-title{
     font-size: 1.25rem;
@@ -57,8 +57,9 @@
 }
 .sign-up{
     font-size: 0.875rem;
-    line-height: 1.4;
-    font-weight: 500;
+    line-height: 1.2;
+    font-weight: 500;   
+    white-space: nowrap;
 }
 .link{
     color: blue;
@@ -71,7 +72,7 @@
 }
 .card{
     position: absolute;
-    top: 150px;
+    top: 120px;
     right: 150px;
     border: 1px solid rgb(11, 53, 88);
     box-shadow: 0px 0px 5px rgb(11, 53, 88);
@@ -82,13 +83,16 @@
     height: 500px;
     border-radius: 20px;
     background-color: rgba(230, 240, 255, 1);
+    display: flex;
+    flex-direction: column;
 }
 .show{
     opacity: 1;
     transform: translate3d(-40, 40, 40);
+    z-index: 1;
 }
 .hide{
-    opacity: 0.1;
+    opacity: 0.2;
     transform: translate3d(0, 0, 0);
 }
 .card-title{
@@ -145,4 +149,22 @@
     align-items: center;
     font-size: 15px;
     gap: 10px;
+}
+.wrapper{
+    width: 100%;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    gap: 24px;
+}
+.right{
+    grid-column: span 3;
+}
+.middle{
+    grid-column: span 4;
+    border-left: 0.5px solid rgba(11, 53, 88, 0.278);
+    border-right: 0.5px solid rgba(11, 53, 88, 0.278);
+}
+.left{
+    grid-column: span 3;
 }
