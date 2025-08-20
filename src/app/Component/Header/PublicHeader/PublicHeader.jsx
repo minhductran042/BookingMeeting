@@ -1,11 +1,13 @@
 'use client'
-import React, { useState } from 'react'
+import React, { act, useState } from 'react'
 import styles from './Header.module.css'
 import Logo from './Logo'
 import NavMenu from './NavMenu/NavMenu'
 import LoginBtn from './UserActions/LoginBtn'
 import GetStartBtn from './UserActions/GetStartBtn'
 import ProductionMenuDetail from './NavMenu/ProductionMenu/ProductionMenuDetail'
+import ResourcesMenuDetail from './NavMenu/ResourcesMenu/ResourcesMenuDetail'
+import SolutionsMenuDetail from './NavMenu/SolutionsMenu/SolutionsMenuDetail'
 const PublicHeader = () => {
 
   const [active, setActive] = useState(null)
@@ -19,8 +21,8 @@ const PublicHeader = () => {
   }
 
   return (
-    <div>
-      <div className={styles.navbar} onMouseLeave={handleMouseLeave}>
+    <div onMouseLeave={handleMouseLeave}>
+      <div className={styles.navbar}>
           <Logo />
           <NavMenu active={active} onMouseEnter={handleMouseEnter}/>
           <div className={styles['user-action']}>
@@ -28,7 +30,9 @@ const PublicHeader = () => {
             <GetStartBtn />
           </div>
       </div>
-      {active === 'production' && <ProductionMenuDetail />}
+      {active === 'production' && <ProductionMenuDetail active={active} onMouseEnter={handleMouseEnter}/>}
+      {active ==='resources' && <ResourcesMenuDetail active={active} onMouseEnter={handleMouseEnter} />} 
+      {active === 'solutions' && <SolutionsMenuDetail active={active} onMouseEnter={handleMouseEnter} />}
     </div>
   )
 }

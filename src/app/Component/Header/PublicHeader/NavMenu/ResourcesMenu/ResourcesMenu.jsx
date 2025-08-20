@@ -1,12 +1,11 @@
 import React from 'react'
 import styles from '../NavMenu.module.css'
-import ProductionMenuDetail from './ProductionMenuDetail'
-const ProductionMenu = ({active}) => {
+const ResourcesMenu = ({active}) => {
   return (
     <div 
-    className={`${styles.menu} ${active === 'production'?styles.active:''}`}>
+    className={`${styles.menu} ${active === 'resources'?styles.active:''}`}>
         <div className={styles['menu-name']}>
-            Production
+            Resources
             <svg className={styles.arrow} width="24" height="24" viewBox="0 0 24 24" 
                 fill="none" stroke="currentColor" strokeWidth="1" 
                 strokeLinecap="round" strokeLinejoin="round">
@@ -14,8 +13,7 @@ const ProductionMenu = ({active}) => {
             </svg>
         </div>
     </div>
-    
   )
 }
 
-export default ProductionMenu
+export default ResourcesMenu

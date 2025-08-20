@@ -1,8 +1,8 @@
 
     import React from 'react'
     import ProductionMenu from './ProductionMenu/ProductionMenu'
-    import SolutionsMenu from './SolutionsMenu'
-    import ResourcesMenu from './ResourcesMenu'
+    import SolutionsMenu from './SolutionsMenu/SolutionsMenu'
+    import ResourcesMenu from './ResourcesMenu/ResourcesMenu'
     import Pricing from './Pricing'
     import styles from './NavMenu.module.css'
 
@@ -21,7 +21,6 @@
             </div>
             <div>
                 <Pricing />
-
             </div>
         </div>
     )
